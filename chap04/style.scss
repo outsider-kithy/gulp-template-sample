@@ -1,0 +1,76 @@
+$keyColor: #29b6e6;
+$breakPoint: 740px;
+
+@mixin sp{
+	@media srceen and (max-width: $breakPoint){
+		@content;
+	}
+}
+
+body{
+	background-color: azure;
+}
+
+h1{
+	color: $keyColor;
+	font-size: 18px;
+	@media screen and (max-width: $breakPoint){
+		font-size: 12px;
+	}
+}
+
+//@mixin, @includeを使ってこのように書いてもOK
+h1{
+	font-size: 18px;
+	@include sp{
+		font-size: 12px;
+	}
+}
+
+.basic_btn{
+	text-decoration: none;
+	background-color: $keyColor;
+	color: #fff;
+	padding: 1.0rem 2.0rem;
+	border-radius: 2rem;
+	text-align: center;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.custom_btn{
+	@extend .basic_btn;
+	background-color: #e62994;
+	border-radius: 0;
+}
+
+$screenMode: "dark";
+
+@if $screenMode != "dark"{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
+} @else {
+	body{
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+
+// ファイルを分割してインポートしてもOK
+@import 'reset';
+@import 'vars';
+
+body{
+	padding: 1.0rem;
+}
+
+h1, h2, p{
+	margin: 1.0rem;
+}
+
+a{
+	display: inline-block;
+	margin: 1.0rem;
+}

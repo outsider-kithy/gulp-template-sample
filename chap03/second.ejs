@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<body>
+		<!--制御構文その2-->
+		<% var pageName = 'セカンドページ' %>
+		<% if(pageName == "トップページ"){%>
+			<h2>ここはトップページです。</h2>
+		<%}else{%>
+			<h2>ここはトップページではありません!</h2>
+		<%}%>
+
+		<!--外部ファイルの埋め込み-->
+		<%- include('./_nav', {current: "second"}) %>
+	</body>
+</html>

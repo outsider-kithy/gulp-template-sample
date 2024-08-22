@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "gulp": "^5.0.0"
+  }
+}
