@@ -1,6 +1,6 @@
-# 「Gulp　+ SCSS　+ Git で実現!快適webサイトCI/CD」サンプルコード
+# 「Gulp + EJS + SCSS + Gitで実現!快適webサイトCI/CD」サンプルコード
 
-これは書籍「Gulp + Sass + Gitで実現!快適webサイトCI/CD」のサンプルコードです。
+これは書籍「Gulp + EJS + SCSS + Gitで実現!快適webサイトCI/CD」のサンプルコードです。
 章ごとのサンプルコードを`chap01`,`chap02`などのディレクトリごとに格納しています。
 
 ## ライセンス・免責事項
